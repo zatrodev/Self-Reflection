@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah");
+
+body {
+  font-family: "Gloria Hallelujah", cursive;
+  background: rgb(42, 43, 47);
+  overflow: hidden;
+
+  animation: change-color 30s 2s infinite alternate;
+}
+
+#click-me {
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+  background: url("https://img.icons8.com/fluency-systems-regular/32/000000/down-squared.png");
+  width: 32px;
+  height: 32px;
+
+  outline: 0;
+}
+
+#panel {
+  z-index: 99;
+  position: absolute;
+  display: none;
+  background: rgba(0, 0, 0, 0.459);
+  text-align: justify;
+  font-size: 13px;
+  color: white;
+  margin-left: 5px;
+  padding: 15px;
+  width: 400px;
+  height: 200px;
+  border-radius: 5px 15px 15px 15px;
+}
+
+.info {
+  position: absolute;
+  width: calc(415px - 180px);
+  margin-left: 165px;
+} 
+
+img {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sad-face {
+  position: absolute;
+  margin-top: -20px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 2s ease 2s, background 1.5s ease;
+
+  justify-content: center;
+}
+
+.eye1 {
+  background: white;
+  margin: 10% 20% 0 20%;
+  width: 3%;
+  height: 50%;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  animation: blink 10s 3s infinite alternate;
+  -webkit-animation: blink 10s 3s infinite alternate;
+  -moz-animation: blink 10s 3s infinite alternate;
+  -o-animation: blink 10s 3s infinite alternate;
+  -ms-animation: blink 10s 3s infinite alternate;
+}
+
+.eye2 {
+  background: white;
+  margin: 10% 20% 0 20%;
+  width: 3%;
+  height: 50%;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  animation: blink 10s 3s infinite alternate;
+  -webkit-animation: blink 10s 3s infinite alternate;
+  -moz-animation: blink 10s 3s infinite alternate;
+  -o-animation: blink 10s 3s infinite alternate;
+  -ms-animation: blink 10s 3s infinite alternate;
+}
+
+.mouth {
+  position: absolute;
+  margin: 10px;
+  height: 100px;
+  width: 30%;
+  border: 5px solid white;
+  margin-bottom: 100px;
+  align-self: flex-end;
+  border-color: transparent transparent white transparent;
+  border-radius: 0 0 100px 100px;
+  transition: all 1s ease-out;
+}
+
+@keyframes blink {
+  0%,
+  20%,
+  25% {
+    width: 3%;
+    height: 50%;
+  }
+  40% {
+    width: 13.8%;
+    height: 30.4%;
+  }
+  60% {
+    width: 19.2%;
+    height: 20.6%;
+  }
+  80% {
+    width: 24.6%;
+    height: 10.8%;
+  }
+  85%,
+  90%,
+  95%,
+  100% {
+    width: 30%;
+    height: 1%;
+  }
+}
+
+@keyframes change-color {
+  0% {
+    background: rgb(42, 43, 47);
+  }
+  10% {
+    background: rgb(10, 10, 139);
+  }
+  20% {
+    background: violet;
+  }
+  30% {
+    background: orange;
+  }
+  40% {
+    background: red;
+  }
+  50% {
+    background: lightblue;
+  }
+  60% {
+    background: pink;
+  }
+  70% {
+    background: coral;
+  }
+  80% {
+    background: burlywood;
+  }
+  90% {
+    background: khaki;
+  }
+  100% {
+    background: lightsalmon;
+  }
+}

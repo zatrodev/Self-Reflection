@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.1/dist/tf.min.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./squares.css" />
+    <title>Santos RN | Self Reflection</title>
+  </head>
+  <body>
+    <div id="click-me"></div>
+    <div id="panel">
+      <img
+        src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/273948196_5253956801304166_590878539378912747_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHeRdnANUJ0c79ulEKLeXagtjXNBsvWQpS2Nc0Gy9ZClGRYh1ZTcVhARBI0K147buyYMDx6LQvO4vpK6mLT-w8r&_nc_ohc=uteqvRA_H7YAX-obAAo&_nc_ht=scontent.fmnl17-3.fna&oh=03_AVLILJWbTvpb2v5uhstL-Wi9Ua53ru6AAwy34JyB-759oQ&oe=624C375B"
+      />
+      <div class="info">
+        <div style="font-size: 16px;">SMILE</div>
+        <hr>
+        I am Robbie, and what you see right there is indeed me. Why? Sometimes,
+        my mood is light. Sometimes, my mood is dark. But whatever my mood is to
+        be, I never forget to smile.
+      </div>
+    </div>
+    <div class="sad-face">
+      <div class="eye1"></div>
+      <div class="eye2"></div>
+      <div class="mouth"></div>
+    </div>
+    <ul class="squares">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <script>
+      $(document).ready(() => {
+        $("#click-me").click(() => {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
